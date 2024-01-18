@@ -7,6 +7,10 @@ dotenv.config({
     path:"./env"
 })
 connectDB()
+.then()
+.catch((error)=>{
+    console.log("mongo connection error: " + error)
+})
 
 //First approach is to connect to the database in the index.js file 
 // import express from "express";
